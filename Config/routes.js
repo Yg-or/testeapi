@@ -34,6 +34,7 @@ routes.post('/add', async (req, res) => {
 });
 
 routes.post('/link', async (req, res) => {
+  console.log(req.body);
   const { id } = req.body;
 
   const all = await Links.get();
