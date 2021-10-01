@@ -33,7 +33,7 @@ routes.post('/add', async (req, res) => {
   return res.json({ link: `https://www.meencurta.com.br/${newKey.id}` });
 });
 
-routes.get('/link', async (req, res) => {
+routes.post('/link', async (req, res) => {
   const { id } = req.body;
 
   const all = await Links.get();
